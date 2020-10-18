@@ -14,10 +14,31 @@ public class alien_control : MonoBehaviour
 
     private float timer = 0.0f;
     private float shoot;
+    SpriteRenderer sprite;
+
     // Start is called before the first frame update
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         shoot = Random.Range(1, 20);
+
+        float clr = Random.Range(0, 10);
+
+        if (clr > 8.5f)
+        {
+            sprite.color = Color.red;
+            value *= 3;
+        }
+        else if (clr > 7)
+        {
+            sprite.color = Color.blue;
+            value *= 2;
+        }
+        else if (clr > 5)
+        {
+            sprite.color = Color.green;
+            value *= 1.5f;
+        }
     }
 
     // Update is called once per frame

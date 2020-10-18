@@ -157,7 +157,7 @@ MonoBehaviour:
   barrier: {fileID: 1911286329652625149, guid: efe3f0b2e19d4fc4b927c588c3cad64e, type: 3}
   startX: -18
   startY: 25
-  maxSpeed: 100
+  maxSpeed: 80
   dead: 0
 --- !u!4 &174424459
 Transform:
